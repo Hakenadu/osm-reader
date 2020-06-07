@@ -5,11 +5,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.github.hakenadu</groupId>
-	<artifactId>osm-reader</artifactId>
+	<artifactId>osm-xml-reader</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
 	<name>OSM Reader</name>
-	<description>A light java 8+ library which provides an abstract API for streaming .osm (OpenStreetMap) files</description>
+	<description>A light java 8+ library which provides an abstract API for streaming OSM-XML from .osm (OpenStreetMap) files</description>
 
 	<properties>
 		<!-- ENCODING -->

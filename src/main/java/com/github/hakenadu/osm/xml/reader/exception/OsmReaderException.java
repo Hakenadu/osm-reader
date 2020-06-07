@@ -1,6 +1,6 @@
-package com.github.hakenadu.osm.reader.exception;
+package com.github.hakenadu.osm.xml.reader.exception;
 
-import com.github.hakenadu.osm.reader.OsmReader;
+import com.github.hakenadu.osm.xml.reader.OsmReader;
 
 /**
  * Superclass for all exceptions thrown by an {@link OsmReader} (for generic

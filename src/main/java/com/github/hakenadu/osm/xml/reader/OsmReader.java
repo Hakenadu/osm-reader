@@ -1,11 +1,11 @@
-package com.github.hakenadu.osm.reader;
+package com.github.hakenadu.osm.xml.reader;
 
 import java.util.concurrent.CompletableFuture;
 import java.util.function.Consumer;
 
-import com.github.hakenadu.osm.reader.exception.OsmReaderStoppedException;
-import com.github.hakenadu.osm.reader.model.Node;
-import com.github.hakenadu.osm.reader.model.Way;
+import com.github.hakenadu.osm.xml.reader.exception.OsmReaderStoppedException;
+import com.github.hakenadu.osm.xml.reader.model.Node;
+import com.github.hakenadu.osm.xml.reader.model.Way;
 
 import lombok.Builder;
 import lombok.Getter;

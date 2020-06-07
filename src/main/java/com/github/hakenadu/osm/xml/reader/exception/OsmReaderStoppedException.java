@@ -1,6 +1,6 @@
-package com.github.hakenadu.osm.reader.exception;
+package com.github.hakenadu.osm.xml.reader.exception;
 
-import com.github.hakenadu.osm.reader.OsmReader;
+import com.github.hakenadu.osm.xml.reader.OsmReader;
 
 /**
  * {@link OsmReaderException} which is thrown, when an {@link OsmReader} is

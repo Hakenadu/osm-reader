@@ -1,4 +1,4 @@
-package com.github.hakenadu.osm.reader;
+package com.github.hakenadu.osm.xml.reader;
 
 import lombok.AccessLevel;
 import lombok.Getter;

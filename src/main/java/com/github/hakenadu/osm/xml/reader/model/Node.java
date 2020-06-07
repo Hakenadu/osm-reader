@@ -1,4 +1,4 @@
-package com.github.hakenadu.osm.reader.model;
+package com.github.hakenadu.osm.xml.reader.model;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.github.hakenadu.osm.reader.model;
+package com.github.hakenadu.osm.xml.reader.model;
 
 import java.util.List;
 
@@ -9,6 +9,6 @@ import lombok.experimental.SuperBuilder;
 @SuperBuilder
 public class Way extends OsmParentElement {
 
-	private List<Node> nodes;
+	private List<Nd> nds;
 	private List<Tag> tags;
 }
