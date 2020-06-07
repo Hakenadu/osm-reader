@@ -1,0 +1,39 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.github.hakenadu</groupId>
+	<artifactId>osm-reader</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<name>OSM Reader</name>
+	<description>A light java 8+ library which provides an abstract API for streaming .osm (OpenStreetMap) files</description>
+
+	<properties>
+		<!-- ENCODING -->
+		<encoding>UTF-8</encoding>
+		<project.build.sourceEncoding>${encoding}</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>${encoding}</project.reporting.outputEncoding>
+
+		<!-- JAVA -->
+		<java.version>1.8</java.version>
+		<maven.compiler.source>${java.version}</maven.compiler.source>
+		<maven.compiler.target>${java.version}</maven.compiler.target>
+
+		<!-- DEPENDENCIES -->
+		<org.projectlombok.lombok.version>1.18.12</org.projectlombok.lombok.version>
+	</properties>
+
+	<dependencies>
+		<!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>${org.projectlombok.lombok.version}</version>
+			<scope>provided</scope>
+		</dependency>
+	</dependencies>
+
+</project>
