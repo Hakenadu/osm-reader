@@ -24,15 +24,34 @@
 
 		<!-- DEPENDENCIES -->
 		<org.projectlombok.lombok.version>1.18.12</org.projectlombok.lombok.version>
+		<org.junit.jupiter.version>5.6.0</org.junit.jupiter.version>
+		<org.awaitility.version>4.0.3</org.awaitility.version>
 	</properties>
 
 	<dependencies>
-		<!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<version>${org.projectlombok.lombok.version}</version>
 			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-api</artifactId>
+			<version>${org.junit.jupiter.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-engine</artifactId>
+			<version>${org.junit.jupiter.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.awaitility</groupId>
+			<artifactId>awaitility</artifactId>
+			<version>${org.awaitility.version}</version>
+			<scope>test</scope>
 		</dependency>
 	</dependencies>
 
