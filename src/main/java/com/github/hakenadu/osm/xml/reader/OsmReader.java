@@ -17,6 +17,7 @@ import javax.xml.stream.events.EndElement;
 import javax.xml.stream.events.StartElement;
 import javax.xml.stream.events.XMLEvent;
 
+import com.github.hakenadu.osm.xml.reader.model.Bounds;
 import com.github.hakenadu.osm.xml.reader.model.Member;
 import com.github.hakenadu.osm.xml.reader.model.Nd;
 import com.github.hakenadu.osm.xml.reader.model.Node;
@@ -73,6 +74,11 @@ public final class OsmReader {
 			}
 		}
 	}
+
+	/**
+	 * is called when the {@link Bounds} were read
+	 */
+	private Consumer<Bounds> onBoundsRead;
 
 	/**
 	 * is called when a {@link Node} was read
@@ -200,6 +206,16 @@ public final class OsmReader {
 			final String ref = startElement.getAttributeByName(new QName("ref")).getValue();
 			final String role = startElement.getAttributeByName(new QName("role")).getValue();
 			runtimeVariables.getRelation().member(new Member(type, ref, role));
+			break;
+		case "bounds":
+			final String minlat = startElement.getAttributeByName(new QName("minlat")).getValue();
+			final String minlon = startElement.getAttributeByName(new QName("minlon")).getValue();
+			final String maxlat = startElement.getAttributeByName(new QName("maxlat")).getValue();
+			final String maxlon = startElement.getAttributeByName(new QName("maxlon")).getValue();
+			if (onBoundsRead != null) {
+				onBoundsRead.accept(new Bounds(Double.parseDouble(minlat), Double.parseDouble(minlon),
+						Double.parseDouble(maxlat), Double.parseDouble(maxlon)));
+			}
 			break;
 		default:
 			break;
